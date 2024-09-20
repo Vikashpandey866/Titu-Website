@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style_contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+     
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="vikash6.jpg" alt="Two women" class="image">
+        </div>
+        <div class="right">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit">Contact Us</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100023795754366&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/vikashpandey866?igsh=MTh0MWw0bXZubnd1dw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/vikash-pandey-2855022a6" target="_blank" class="icon-linkedin">
+                    <i class="fab fa-linkedin-in">
+                    </i>
+                  </a>
+            </div>
+            <div class="message" id="thank-you-message">Thank you for contacting us!</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            document.getElementById('thank-you-message').style.display = 'block'; // Show thank you message
+            this.reset(); // Reset the form fields
+        });
+    </script>
+</body>
+</html>
+<!--  
+
+.hero-text {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero-text h1 {
+    text-align: center;
+    color: #ff6600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.summary p {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.summary p:first-line {
+    font-weight: bold;
+    font-size: 20px;
+}
+.summary p::first-letter {
+    font-size: 26px;
+    color: #ff6600;
+    font-weight: bold;
+}
+.summary p:last-child {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+}
+-->
