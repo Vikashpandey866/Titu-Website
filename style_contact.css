@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4d4a4a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left {
+    width: 45%;
+    padding-right: 30px;
+    margin-top: 80px;
+}
+
+.right {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+ 
+
+.image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 13px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px gold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    box-shadow: 0px 8px 16px rgb(144, 172, 209);
+    background-color: #ffffe0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 50%;
+    align-self: center;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+    color: black;
+    font-size: large;
+}
+
+/* Social Links fixed position, in front of other elements */
+.social-links {
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 50%;
+    align-self: center;
+    margin-top: 20px;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center items */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between items */
+}
+
+/* Adjusting .social-links for smaller screens */
+@media (max-width: 768px) {
+    .social-links {
+        width: 80%; /* Wider width for smaller screens */
+        padding: 8px 20px;
+    }
+}
+
+.social-links a {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    max-width: 100px;
+    background-color: black;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 18px;
+    text-align: center; /* Ensure text is centered inside the link */
+}
+
+/* Adjusting link styles for smaller screens */
+@media (max-width: 768px) {
+    .social-links a {
+        font-size: 18px;
+        padding: 11px 17px;
+    }
+}
+
+.social-links a:hover {
+    background-color: #bdcfe7;
+    color: #192ff8;
+    transform: scale(1.2);
+}
+
+.message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3cdf26;
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .social-links {
+        bottom: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links a {
+        font-size: 20px;
+    }
+}
