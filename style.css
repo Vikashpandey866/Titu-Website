@@ -257,7 +257,8 @@ body.dark-mode .product:hover {
    
 }
  body.dark-mode .product{
-    background-color: #ee87bb;
+    background-color: #79aaeb;
+    
  }
 
 /* Responsive styles */
@@ -404,6 +405,7 @@ header nav ul li a.active::after {
     
     display: none;
     cursor: pointer;
+    margin-left: -200px;
     
 }
 
@@ -416,6 +418,7 @@ header nav ul li a.active::after {
         right: 0;
         width: 200px; 
         text-align: right;
+        
        
     }
 
@@ -423,10 +426,12 @@ header nav ul li a.active::after {
         margin: 0.2em 1em;
         background-color: #005f99;
         text-align: center;
+       
     }
 
     header nav ul.show {
         display: flex;
+        margin-right: 200px;
     }
 
     .menu-icon {
@@ -495,3 +500,157 @@ body.dark-mode .hero-text{
 body.dark-mode .summary p:last-child{
     color: white;
 }
+/* extra line */
+/* Shopping Cart styles */
+.shopping-cart {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cart-icon {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px; /* Spacing between icon and text */
+}
+
+.cart-list {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.cart-list p {
+    color: #666;
+}
+/* total amount css */
+.feedback-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0fc84e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    animation: fade-in-out 2s;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.product-list {
+    display: flex;                /* Enables Flexbox */
+    justify-content: space-between; /* Adjusts spacing between items */
+    flex-wrap: wrap;            /* Allows wrapping to the next line on small screens */
+    margin: 20px;               /* Adds margin around the product list */
+}
+
+.product {
+    background-color: #f4f4f4;  /* Background color for products */
+    padding: 20px;              /* Padding inside each product */
+    border-radius: 15px;        /* Rounded corners */
+    width: 200px;               /* Fixed width for each product */
+    margin: 10px;               /* Space between products */
+    text-align: center;         /* Center aligns text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+}
+ /* night mode icon */
+ body {
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    background-color: white; /* Default background */
+    color: black; /* Default text color */
+}
+
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: white; /* Light text color */
+}
+
+.header-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.3s ease; /* Animation for the button */
+}
+
+#dark-mode-toggle:focus {
+    outline: none;
+}
+
+.fa-sun {
+    color: orange; /* Sun color */
+}
+
+.fa-moon {
+    color: yellow; /* Moon color */
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* header file */
+header {
+    display: flex;
+    justify-content: space-between; /* Align items */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Adjust as needed */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    margin-left: 20px; /* Space between logo/menu and the icon */
+}
+
